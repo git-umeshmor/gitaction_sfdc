@@ -1,0 +1,12 @@
+<template>
+    <h1>Account and related details</h1>
+    <template for:each={accountList} for:item="acc">
+        <div key={acc.Id}>
+            <lightning-card variant="narrow" icon-name="standard:account">
+                {acc.Name} <br/>
+                {acc.Type}<br/>
+                {acc.Industry}<br/>
+            </lightning-card>
+        </div>
+    </template>
+</template>

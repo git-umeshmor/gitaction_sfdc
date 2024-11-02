@@ -1,0 +1,7 @@
+<template>
+    <template for:each={oppList.data} for:item="opp">
+        <div key={opp.Id} class="slds-m-bottom_medium">
+            <c-child-component-to-display-opportunity-detail opp-rec={opp}></c-child-component-to-display-opportunity-detail>
+        </div>
+    </template>
+</template>

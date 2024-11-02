@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="messageTemplate" type="String" />
+    <aura:attribute name="numberOfEvents"  type="Integer" default="0"/>
+    <aura:handler name="sampleComponentEvent" event="c:cmpEvent" action="{!c.handleCmpEvent}" />
+    <h1>Parent Component</h1>
+    <c:ChildComponent />
+    <p>{!v.messageTemplate}</p>
+    <p>Number of events: {!v.numberOfEvents}</p>
+</aura:component>

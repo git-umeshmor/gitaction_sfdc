@@ -1,0 +1,19 @@
+<template>
+    <div class="card">
+        <div class="ribbon">Contact Details</div>
+        <div class="slds-p-around_medium">
+            <lightning-input label="First Name" value={firstName} onchange={handleInputChange} data-id="firstName"></lightning-input>
+            <lightning-input label="Last Name" value={lastName} onchange={handleInputChange} data-id="lastName"></lightning-input>
+            <lightning-input label="Email" value={email} onchange={handleInputChange} data-id="email" type="email"></lightning-input>
+            <lightning-input label="Phone" value={phone} onchange={handleInputChange} data-id="phone" type="tel"></lightning-input>
+        </div>
+        <div>
+            <button class="slds-button slds-button_brand" onclick={handleClick}>Create Contact</button>
+        </div>
+
+          <!-- Spinner -->
+          <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+    </div>
+</template>

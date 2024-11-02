@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="recordId" type="String" />
+    <lightning:recordViewForm recordId="{!v.recordId}" 
+                              objectApiName="Account">
+    <div class="slds-grid">
+        <div class="slds-col slds-size_2-of-3">
+            <lightning:outputField fieldName="Name" />
+            <lightning:outputField fieldName="Phone" />
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+            <lightning:outputField fieldName="Industry" />
+            <lightning:outputField fieldName="AnnualRevenue" />
+        </div>
+    </div>
+</lightning:recordViewForm>
+</aura:component>

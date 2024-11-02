@@ -1,0 +1,21 @@
+.card {
+    position: relative;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #532121;
+}
+
+.ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0070d2;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-top-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
